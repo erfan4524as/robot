@@ -8,7 +8,7 @@ TOKEN = os.environ.get("TOKEN")
 PROVIDER_TOKEN = os.environ.get("PROVIDER_TOKEN")
 BASE_URL       = f"https://tapi.bale.ai/bot{TOKEN}"
 BOT_USERNAME = "ARKA_MEMBER_BOT"
-ADMIN_IDS = [int(x) for x in os.environ.get("ADMIN", "0").split(",") if x.strip()]
+ADMIN_IDS = [int(x) for x in os.environ.get("ADMIN", "0") if x.strip()]
 DATA_FILE    = "bot_data.json"
 
 SVCLABEL = {
