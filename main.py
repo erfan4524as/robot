@@ -7,9 +7,8 @@ from datetime import datetime, timedelta, timezone
 TOKEN = os.environ.get("TOKEN")
 PROVIDER_TOKEN = os.environ.get("PROVIDER_TOKEN")
 BASE_URL       = f"https://tapi.bale.ai/bot{TOKEN}"
-
 BOT_USERNAME = "ARKA_MEMBER_BOT"
-ADMIN_IDS    = [324157864]
+ADMIN_IDS    = int(os.environ.get("ADMIN", "0"))
 DATA_FILE    = "bot_data.json"
 
 SVCLABEL = {
